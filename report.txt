@@ -1,0 +1,11 @@
+* Created a PromptBox component to display and allow users to update prompts, implementing state management with React hooks for handling prompt text and visibility.
+* Added functionality to save the user's prompt to localStorage for persistence across sessions, ensuring that each user's input is retained when the app is reloaded.
+* Implemented conditional checks to safely access localStorage only in the browser environment to avoid errors during server-side rendering, particularly relevant for Next.js applications.
+* Integrated the PromptBox component into the Experience component, establishing a connection between the user's input and the application's main interactive area.
+* Added a toggle visibility feature for the PromptBox, allowing users to show or hide the prompt input field with a settings button, enhancing the user interface and user experience.
+* Utilized the useEffect hook to fetch the stored prompt from localStorage upon the initial load of the Experience component, making sure the latest user input is always displayed.
+* Encountered and resolved a runtime error related to the localStorage API being undefined in a non-browser environment, indicative of Next.js's server-side rendering process.
+* Revised the useEffect dependency array in the Experience component to prevent unnecessary re-renders and potential infinite loops by removing the prompt state from the dependencies.
+* Streamlined the logic for updating the prompt in both Experience and PromptBox components, ensuring consistency and eliminating redundancy in the codebase.
+* Searched and found solutions to common issues with localStorage and React's state management in a server-side rendering context, applying best practices for checking the execution environment.
+* Added aesthetic improvements to the PromptBox component using Tailwind CSS for styling, focusing on responsiveness and visual appeal with gradient backgrounds and rounded input fields.
