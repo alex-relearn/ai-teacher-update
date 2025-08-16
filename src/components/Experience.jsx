@@ -59,19 +59,17 @@ export const Experience = () => {
     default: {
       classroom: {
         position: [0.2, -1.7, -2],
-        rotation: [0, degToRad(180), 0],
       },
       teacher: {
         position: [-0.7, -1.7, -2.7],
       },
       board: {
-        position: [2.3, 0.382, -6],
+        position: [1.5, 0.382, -6],
       },
     },
     alternative: {
       classroom: {
         position: [0.3, -1.7, -1.5],
-        rotation: [0, degToRad(180), 0],
         scale: 0.4,
       },
       teacher: { position: [-0.7, -1.7, -3] },
@@ -83,7 +81,6 @@ export const Experience = () => {
     default: {
       classroom: {
         position: [0.2, -1.7, -2],
-        rotation: [0, degToRad(180), 0],
       },
       teacher: {
         position: [-0.7, -1.7, -3],
@@ -95,7 +92,6 @@ export const Experience = () => {
     alternative: {
       classroom: {
         position: [0.3, -1.7, -1.5],
-        rotation: [0, degToRad(180), 0],
         scale: 0.4,
       },
       teacher: { position: [-0.7, -1.7, -3] },
