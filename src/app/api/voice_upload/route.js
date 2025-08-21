@@ -10,7 +10,7 @@ export async function POST(request) {
       request,
       onBeforeGenerateToken: async (pathname) => {
         return {
-          allowedContentTypes: ['audio/wav',],
+          allowedContentTypes: ['audio/wav', 'audio/webm', 'audio/ogg'],
           tokenPayload: JSON.stringify({
           }),
         };
