@@ -61,10 +61,10 @@ export const Experience = () => {
         position: [0.2, -1.7, -2],
       },
       teacher: {
-        position: [-0.7, -1.7, -2.7],
+        position: [-1.5, -1.7, -2.7],
       },
       board: {
-        position: [1.5, 0.382, -6],
+        position: [0.2, 0.382, -6],
       },
     },
     alternative: {
@@ -478,7 +478,7 @@ export const Experience = () => {
       <Loader />
       <Canvas
         camera={{
-          position: [0, 0, 0.0001],
+          position: [0.000065, 0, 0.0001],
         }}
       >
         <CameraManager setCameraControlsRef={setCameraControlsRef} />
@@ -583,10 +583,8 @@ export const Experience = () => {
 };
 
 const CAMERA_POSITIONS = {
-  default: [0, 6.123233995736766e-21, 0.0001],
-  loading: [
-    0.00002621880610890309, 0.00000515037441056466, 0.00009636414192870058,
-  ],
+  default: [0.000065, 6.123233995736766e-21, 0.0001],
+  loading: [0.00002621880610890309, 0.00000515037441056466, 0.00009636414192870058],
   speaking: [0, -1.6481333940859815e-7, 0.00009999846226827279],
 };
 
