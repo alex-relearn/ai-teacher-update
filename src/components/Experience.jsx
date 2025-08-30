@@ -61,7 +61,7 @@ export const Experience = () => {
         position: [0.2, -1.7, -2],
       },
       teacher: {
-        position: [-1.5, -1.7, -2.7],
+        position: [-1.85, -1.7, -2.7],
       },
       board: {
         position: [0.2, 0.382, -6],
@@ -72,7 +72,7 @@ export const Experience = () => {
         position: [0.3, -1.7, -1.5],
         scale: 0.4,
       },
-      teacher: { position: [-0.7, -1.7, -3] },
+      teacher: { position: [-1.05, -1.7, -3] },
       board: { position: [1.7, 0.84, -8] },
     },
   };
@@ -83,7 +83,7 @@ export const Experience = () => {
         position: [0.2, -1.7, -2],
       },
       teacher: {
-        position: [-0.7, -1.7, -3],
+        position: [-1.05, -1.7, -3],
       },
       board: {
         position: [0.75, 0.73, -6],
@@ -94,7 +94,7 @@ export const Experience = () => {
         position: [0.3, -1.7, -1.5],
         scale: 0.4,
       },
-      teacher: { position: [-0.7, -1.7, -3] },
+      teacher: { position: [-1.05, -1.7, -3] },
       board: { position: [1.7, 0.84, -8] },
     },
   };
@@ -532,7 +532,7 @@ export const Experience = () => {
               key={teacher}
               {...itemPlacement[classroom].teacher}
               scale={1.5}
-              rotation-y={degToRad(20)}
+              rotation-y={degToRad(35)}
             />
           </Float>
         </Suspense>
@@ -585,13 +585,13 @@ export const Experience = () => {
 const CAMERA_POSITIONS = {
   default: [0.000065, 6.123233995736766e-21, 0.0001],
   loading: [0.00002621880610890309, 0.00000515037441056466, 0.00009636414192870058],
-  speaking: [0, -1.6481333940859815e-7, 0.00009999846226827279],
+  speaking: [0.00000621880610890309, -1.6481333940859815e-7, 0.00009999846226827279],
 };
 
 const CAMERA_ZOOMS = {
   default: 1,
   loading: 1.3,
-  speaking: 2.1204819420055387,
+  speaking: 1.8,
 };
 
 const CameraManager = ({ setCameraControlsRef }) => {
